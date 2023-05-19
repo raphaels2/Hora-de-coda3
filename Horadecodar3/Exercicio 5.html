@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   // Solicita ao usuário que informe os dois números inteiros
+let numero1 = parseInt(prompt("Informe o primeiro número inteiro: "));
+let numero2 = parseInt(prompt("Informe o segundo número inteiro: "));
+
+let somaTotal = 0;
+let contadorTotal = 0;
+
+// Calcula a soma e o contador para todos os números inteiros entre os valores informados
+for (let numero = numero1; numero <= numero2; numero++) {
+  somaTotal += numero;
+  contadorTotal++;
+}
+
+// Calcula a média dos números informados pelo usuário
+let mediaNumeros = (numero1 + numero2) / 2;
+
+// Calcula a média dos números entre os valores informados
+let mediaTotal = somaTotal / contadorTotal;
+
+// Imprime os resultados
+console.log("A média aritmética dos números informados é:", mediaNumeros);
+console.log("A média aritmética de todos os números entre", numero1, "e", numero2, "é:", mediaTotal);
+     
+   </script>
+    
+    
+</body>
+</html>

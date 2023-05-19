@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const quantidadeNotas = 6;
+let notas = [];
+let somaNotas = 0;
+
+for (let i = 0; i < quantidadeNotas; i++) {
+  let nota = parseFloat(prompt(`Digite a nota ${i + 1}:`));
+
+  while (nota < 0 || nota > 10 || isNaN(nota)) {
+    nota = parseFloat(prompt(`Nota inválida. Digite novamente a nota ${i + 1}:`));
+  }
+
+  notas.push(nota);
+  somaNotas += nota;
+}
+
+const media = somaNotas / quantidadeNotas;
+
+console.log(`A média do aluno é: ${media.toFixed(2)}`);
+
+
+        
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let N = parseInt(prompt("Digite um valor para N:"));
+
+// Verifica se N é um número válido
+if (isNaN(N) || N <= 0) {
+  console.log("O valor de N deve ser um número maior que zero.");
+} else {
+  // Loop externo para percorrer as tabuadas de 1 a N
+  for (let i = 1; i <= N; i++) {
+    console.log(`Tabuada do ${i}:`);
+    
+    // Loop interno para multiplicar de 1 a 10
+    for (let j = 1; j <= 10; j++) {
+      console.log(`${i} x ${j} = ${i * j}`);
+    }
+    
+    console.log(""); // Linha em branco para separar as tabuadas
+  }
+}
+
+        </script>
+</body>
+</html>
